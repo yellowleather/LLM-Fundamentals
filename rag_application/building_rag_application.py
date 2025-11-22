@@ -41,10 +41,10 @@ PROMPT_TEMPLATE = (
 
 def init_openai_client() -> OpenAI:
     """Load environment variables and return an OpenAI client."""
-    load_dotenv(BASE_DIR / ".env")
+    load_dotenv(BASE_DIR.parent / ".env")
     openai_api_key = os.getenv("OPENAI_API_KEY")
     if not openai_api_key:
-        raise RuntimeError("OPENAI_API_KEY is not set. Add it to rag_application/.env before running the script.")
+        raise RuntimeError("OPENAI_API_KEY is not set. Add it to .env in the project root before running the script.")
     return OpenAI()
 
 
