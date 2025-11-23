@@ -1,4 +1,4 @@
-#!/usr/bin/env -S uv run
+#!/usr/bin/env -S uv run --with-requirements ../requirements.txt
 # -*- coding: utf-8 -*-
 """RAG demo that ingests a medical FAQ corpus and serves a Retrieval-Augmented chatbot."""
 
@@ -28,7 +28,7 @@ warnings.filterwarnings("ignore")
 BASE_DIR = Path(__file__).resolve().parent
 OUTPUT_DIR = BASE_DIR / "output"
 DATASET_ID = "1727UCcg_Nxn9Nbj_LiX8pvGEpo591oxc"
-DATASET_PATH = BASE_DIR / "input" / "ai-medical-chatbot.txt"
+DATASET_PATH = BASE_DIR.parent / "inputs" / "ai-medical-chatbot.txt"
 FAISS_DIR = BASE_DIR / "faiss_doc_idx"
 PROMPT_TEMPLATE = (
     "You are a medical assistant chatbot helping answer patient questions based only on the provided context.\n"

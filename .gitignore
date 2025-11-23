@@ -9,8 +9,9 @@ venv/
 # Environment variables
 .env
 
-# FAISS index
-rag_application/faiss_doc_idx/
+# Vector stores
+**/chroma_db/
+**/faiss_doc_idx/
 
 # Gradio
 *.gradio/
