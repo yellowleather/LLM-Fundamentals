@@ -18,3 +18,7 @@ venv/
 
 # Generated outputs
 output/
+
+# Large data files
+*.csv
+*.txt
