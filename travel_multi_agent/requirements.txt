@@ -1,0 +1,20 @@
+# Core LangChain and LangGraph dependencies
+langgraph>=0.2.0
+langchain>=0.3.0
+langchain-core>=0.3.0
+langchain-community>=0.3.0
+
+# LLM Provider
+langchain-openai>=0.2.0
+openai>=1.0.0
+
+# Search and API Tools
+langchain-tavily>=0.2.0
+tavily-python>=0.5.0
+serpapi>=0.1.5
+
+# Environment and utilities
+python-dotenv>=1.0.0
+
+# Optional but recommended for visualization
+ipython>=8.0.0
